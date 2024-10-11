@@ -1,0 +1,16 @@
+prepare:
+  steps:
+    - name: Maven permitt
+      command: chmod 755 mvnw
+    - name: "Install Java "
+      command: nix-env -iA nixpkgs.jdk21
+    - name: Maven generate sources
+      command: JAVA_HOME="$(readlink -e $(type -p javac) | sed -e
+        's/\/bin\/javac//g')" ./mvnw clean install
+test:
+  steps: []
+run:
+  steps:
+    - name: mvn spring-boot:run
+      command: JAVA_HOME="$(readlink -e $(type -p javac) | sed -e
+        's/\/bin\/javac//g')" ./mvnw spring-boot:run
