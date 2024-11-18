@@ -1,0 +1,207 @@
+/* Container Styles */
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container,
+    .container-sm {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px;
+    }
+}
+
+/* Navbar Brand Style */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Navigation Link Style */
+.nav-link {
+    font-size: 16px;
+}
+
+/* Button Contact Style */
+.btn-contact {
+    border: 2px solid black;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    height: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('/images/header4.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Schwarzer Overlay mit Transparenz */
+    z-index: 1;
+}
+
+.hero-text {
+    color: white;
+    position: relative;
+    z-index: 2; /* Text bleibt über dem Overlay */
+    padding: 20px;
+    border-radius: 10px; /* Abgerundete Ecken für das Textfeld */
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 10px; /* Abstand um den Text herum */
+    border-radius: 60px; /* Optionale abgerundete Ecken */
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-text p {
+    font-size: 2.25rem;
+    margin-top: 10px;
+    padding: 10px; /* Abstand um den Text herum */
+    border-radius: 60px; /* Optionale abgerundete Ecken */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Hero Button Style */
+.hero-btn {
+    margin-top: 20px;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Intro Section Styles */
+.intro-section {
+    padding-top: 40px;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem; /* Kleinere Schriftgröße als in der Hero-Section */
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.intro-text p {
+    font-size: 1.2rem; /* Angenehm lesbare Größe */
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #8f9397;
+}
+
+.intro-text .btn {
+    font-size: 1rem;
+    color: #8f9397;
+}
+
+/* Feature Section Styles */
+.feature-section {
+    padding: 80px 0;
+}
+
+.feature-card {
+    transition: transform 0.3s ease;
+    padding: 30px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+/* Custom Icon Style */
+.custom-icon {
+    display: inline-block;
+    width: 30px; /* Größe anpassen */
+    height: 30px;
+    background-image: url('/images/LC_Spiegel_LY03_emtpy_.png');
+    background-size: cover;
+    border-radius: 50%; /* Runde Form */
+    margin-right: 15px; /* Abstand zum Text */
+}
+
+.custom-img {
+    max-width: 100%; /* Bild passt sich an die Breite des Containers an */
+    max-height: 400px; /* Maximale Höhe */
+    width: auto; /* Flexibel in der Breite */
+    height: auto; /* Flexibel in der Höhe */
+}
+
+/* List Group Borderless */
+.list-group-borderless .list-group-item {
+    border: none;
+    color: #8f9397;
+    padding: 0.425rem 0;
+    display: flex;
+    align-items: center; /* Zentriert Icon und Text vertikal */
+    font-size: 1.2rem; /* Angenehm lesbare Größe */
+    font-family: "Poppins", sans-serif;
+}
