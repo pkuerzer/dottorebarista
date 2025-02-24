@@ -10,4 +10,14 @@ public class IndexController {
     public String index() {
         return "index";
     }
+
+    @GetMapping("/impressum")
+    public String impressum() {
+        return "impressum";
+    }
+
+    @GetMapping("/datenschutz")
+    public String datenschutz() {
+        return "datenschutz";
+    }
 }
