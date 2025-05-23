@@ -13,13 +13,12 @@
 </head>
 <body>
 
+
 <!-- Hero Section -->
 <section class="hero-section py-5">
     <div class="container">
         <div class="hero-text">
-            <h1>Dottore Barista – Mario De Rinaldis</h1>
-            <!--<p>Hilfe zur Selbsthilfe – Lass uns gemeinsam auf eine Reise der Selbsterkenntnis gehen</p>-->
-            <!--<a href="#" class="btn btn-success hero-btn">View Services</a>-->
+            <h1>Workshops dottorebarista</h1>
         </div>
     </div>
 </section>
@@ -30,11 +29,25 @@
     <div class="container">
         <div class="row">
             <div class="intro-text text-center col-sm-12 col-lg-10 mx-auto mt-4 mb-3 mb-md-5">
-                <h1>Hilfe zur Selbsthilfe – Lass uns gemeinsam auf eine Reise der Selbsterkenntnis gehen</h1>
-                <p class="px-lg-12 px-0 lead">Schön, dass du auf meiner Internetseite gelandet bist. Mein Name ist Mario
-                    De Rinaldis, Vater von
-                    zwei
-                    Kindern und passionierter Gastronom und Barista-Philosoph, Dottore Barista.</p>
+                <h1>hey Du! </h1>
+                <p class="px-lg-12 px-0 lead">Im WORKSHOP verbringen wir 4 Tage und 4 Nächte miteinander. Ich zeige dir die ersten Schritte, deiner persönlichen Veränderung. Den Rest, wirst du dann alleine erarbeiten können.</p>
+
+                <p class="px-lg-12 px-0 lead">Empfehlenswert ist ein BERATUNGSGESPRÄCH im Vorfeld mit mir zu vereinbaren. Dann weißt du auch, auf was du dich freuen kannst.
+
+                </p>
+                <p class="px-lg-12 px-0 lead"> Die Kosten hier belaufen sich auf 2222,- Euro, plus Übernachtung und Verpflegung im HofGutGeorgental 1.
+                </p>
+            </div>
+            <div class="intro-text text-center col-sm-12 col-lg-10 mx-auto mt-4 mb-3 mb-md-5">
+                <h2>Kontakt</h2>
+                <p>Du möchtest mehr erfahren oder mit mir in Kontakt treten? Hier findest du alle Infos:</p>
+                <p><strong>Email:</strong> <a class="text-decoration-none text-dark" href="mailto:dottorebarista@gmx.de">dottorebarista@gmx.de</a></p>
+                <div class="intro-text text-center col-sm-12 col-lg-10 mx-auto mt-4 mb-3 mb-md-5">
+                    <a class="text-decoration-none text-dark" href="https://startnext.com/profile/mariode-rinaldis" alt="Startnext" target="_blank">
+                        <img th:src="@{images/Startnext Logo monochrom.svg}" alt="Startnext" style="height: 90px; vertical-align: middle;" />
+                    </a>
+                    <a class="text-decoration-none text-dark" href="https://instagram.com/marioderinaldis" target="_blank"><i class="bi bi-instagram mx-2 fs-1"></i></a>
+                </div>
             </div>
         </div>
     </div>
@@ -67,27 +80,6 @@
     </div>
 </section>
 
-<!-- Meine Mission Section -->
-<section class="section" id="mission">
-    <div class="container">
-        <div class="section-title intro-text">
-            <h2>Meine Mission</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-12 intro-text">
-                <p class="text-center">Alle Ansätze auf dieser Seite dienen zur Selbsthilfe. Sie sind eine Chance,
-                    Lösungen zu suchen und
-                    sich und seine Außenwelt besser zu akzeptieren, zu würdigen und letztendlich im Herzen zu
-                    integrieren.</p>
-                <p class="text-center">Dafür bin ich da und biete meine Dienste an. Ich helfe dir, auf deinem Weg zur
-                    Selbsterkenntnis und
-                    zur inneren Zufriedenheit.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <!-- Feature Section -->
 <section class="feature-section">
     <div class="container">
@@ -109,62 +101,27 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
                 <a th:href="@{/workshop}" class="text-decoration-none text-dark">
-                <div class="feature-card p-4">
-                    <div class="feature-icon">
-                        <i class="bi bi-shield-lock"></i>
+                    <div class="feature-card p-4">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h5>Workshops</h5>
+                        <p>In meinen Workshops lernst du, wie du die Verbindung zu dir selbst und zu
+                            anderen Menschen stärken kannst</p>
                     </div>
-                    <h5>Workshops</h5>
-                    <p>In meinen Workshops lernst du, wie du die Verbindung zu dir selbst und zu
-                        anderen Menschen stärken kannst</p>
-                </div>
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
                 <a th:href="@{/mentoring}" class="text-decoration-none text-dark">
-                <div class="feature-card p-4">
-                    <div class="feature-icon">
-                        <i class="bi bi-heart"></i>
+                    <div class="feature-card p-4">
+                        <div class="feature-icon">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                        <h5>Mentoring</h5>
+                        <p>Langfristiges Mentoring für persönliche und berufliche Entwicklung, um das
+                            Beste aus dir herauszuholen</p>
                     </div>
-                    <h5>Mentoring</h5>
-                    <p>Langfristiges Mentoring für persönliche und berufliche Entwicklung, um das
-                        Beste aus dir herauszuholen</p>
-                </div>
                 </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Warum Dottore Barista Section -->
-<section class="section" id="why-barista">
-    <div class="container">
-        <div class="section-title intro-text">
-            <h2>Warum „Dottore Barista“?</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-12 intro-text text-center">
-                <p>Durch meine Arbeit und Gespräche im Café ist mit meinen Gästen dieser Name entstanden. Danke Maria
-                    dafür! Natürlich bin ich kein Dottore, aber doch eine helfende Hand. Deshalb reiche ich sie dir…</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="contact">
-    <div class="container">
-        <div class="section-title intro-text">
-            <h2>Kontakt</h2>
-        </div>
-        <div class="row">
-            <div class="intro-text text-center col-sm-12 col-lg-10 mx-auto mt-4 mb-3 mb-md-5">
-                <p>Du möchtest mehr erfahren oder mit mir in Kontakt treten? Hier findest du alle Infos:</p>
-                <p><strong>Email:</strong> <a class="text-decoration-none text-dark" href="mailto:dottorebarista@gmx.de">dottorebarista@gmx.de</a></p>
-                <div class="intro-text text-center col-sm-12 col-lg-10 mx-auto mt-4 mb-3 mb-md-5">
-                    <a class="text-decoration-none text-dark" href="https://startnext.com/profile/mariode-rinaldis" alt="Startnext" target="_blank">
-                        <img th:src="@{images/Startnext Logo monochrom.svg}" alt="Startnext" style="height: 90px; vertical-align: middle;" />
-                    </a>
-                    <a class="text-decoration-none text-dark" href="https://instagram.com/marioderinaldis" target="_blank"><i class="bi bi-instagram mx-2 fs-1"></i></a>
-                </div>
             </div>
         </div>
     </div>

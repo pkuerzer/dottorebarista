@@ -20,4 +20,19 @@ public class IndexController {
     public String datenschutz() {
         return "datenschutz";
     }
+
+    @GetMapping("/beratung")
+    public String beratung() {
+        return "beratung";
+    }
+
+    @GetMapping("/workshop")
+    public String workshop() {
+        return "workshop";
+    }
+
+    @GetMapping("/mentoring")
+    public String mentoring() {
+        return "mentoring";
+    }
 }
